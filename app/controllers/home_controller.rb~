@@ -10,9 +10,7 @@ class HomeController < ActionController::Base
 	@a = session[:signed_request]['page']['liked']
 	@b = session[:signed_request]['user_id']
 	@c = session[:oauth].get_user_info_from_cookies(cookies)
-        if @a==true
-        redirect_to :liked
-	end
+        
   	respond_to do |format|
 			 format.html {  }
 		 end
