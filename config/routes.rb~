@@ -51,8 +51,9 @@ Captcha::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   match 'users/new' => 'users#new'
+   match 'users/callback' => 'users#callback'
    get "home" => "users#home"
+   get "thankyou"=>"users#thankyou"
    root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
