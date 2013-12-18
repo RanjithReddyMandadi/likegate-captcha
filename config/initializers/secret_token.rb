@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-SampleKoalaRailsApp::Application.config.secret_token = '81a2c5359f33ce1a24e479f66a5f6288dcb7d8a7c6bf1374643952557e31880b26f6fd0c4b7b2b2638e76fa612d5fec5e50fdcf8b0389b60754a852f1750fcc8'
+Captcha::Application.config.secret_token = '58b9d2307e03d43a0110930de35c491a86f00d442da12951d3fab0c64f8b5825dd78dc54500735cf77525bae53b5dcbfb86e8d81f90f7e0e63bf0d5c4753fcc4'
