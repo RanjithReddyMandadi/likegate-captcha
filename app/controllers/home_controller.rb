@@ -11,6 +11,7 @@ class HomeController < ActionController::Base
 	@b = session[:signed_request]['user_id']
 	@c = session[:oauth].get_user_info_from_cookies(cookies)
         if @a==true
+        
         redirect_to :liked
 	end
   	respond_to do |format|
@@ -43,7 +44,7 @@ class HomeController < ActionController::Base
 	
 	end
        def liked
-       
+       @d = session[:signed_request]
        end
 end
 
