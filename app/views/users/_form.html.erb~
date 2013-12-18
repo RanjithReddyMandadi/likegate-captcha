@@ -25,7 +25,7 @@
   </div>
   <div class ="field">
    <%#= show_simple_captcha(:object=>"user") %>
-   <%= f.simple_captcha :label => "Enter numbers..." %>
+   <%= f.simple_captcha %>
   </div> 
   <div class="actions">
     <%= f.submit %>
