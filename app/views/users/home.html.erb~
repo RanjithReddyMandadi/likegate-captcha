@@ -1,7 +1,6 @@
-<p>Like gate<p>
+<h1> Like us to enter competition </h1>
 
-<%= link_to 'Authenticate this Facebook app', @auth_url, :class=>"button"%>
-<%= @a.inspect %>
-<%= @b.inspect %>
-<%= @c.inspect %>
-<img src="http://graph.facebook.com/<%= @b %>/picture">
+ <div class="span8">
+      <div class="fb-like" data-href="https://www.facebook.com/178084742391883" data-width="450" data-show-faces="false" data-send="false">
+</div>
+    </div>
