@@ -1,0 +1,9 @@
+Looping through your statuses:<br />
+<ul>
+
+<% @graph_data.each do |status| %>
+<%= status["message"] %> (<i><%=status["updated_time"]%></i>)<hr>
+<% end %>
+</ul>
+
+<a href="https://www.facebook.com/dialog/pagetab?app_id=661800997197519&redirect_uri=http://koalatestjon.herokuapp.com/home/callback"></a>
