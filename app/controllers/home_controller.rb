@@ -45,6 +45,7 @@ class HomeController < ActionController::Base
 	end
        def liked
        @d = session[:signed_request]
+	@c = session[:oauth].get_user_info_from_cookies(cookies)
        end
 end
 
