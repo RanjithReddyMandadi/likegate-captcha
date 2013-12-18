@@ -1,6 +1,28 @@
 <h1> Like us to enter competition </h1>
 
  <div class="span8">
-      <div class="fb-like" data-href="https://www.facebook.com/178084742391883" data-width="450" data-show-faces="false" data-send="false">
+      <div class="fb-like" data-href="https://www.facebook.com/pages/Captcha/560157060737950" data-width="450" data-show-faces="false" data-send="false">
 </div>
     </div>
+
+<div id="fb-root"></div>
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<script>
+FB.init({
+appId : '223055797873639',
+status : true, // check login status
+cookie : true, // enable cookies to allow the server to access the session
+xfbml : true // parse XFBML
+});
+
+window.fbAsyncInit = function() {
+FB.Canvas.setAutoResize();
+}
+</script>
+<script>
+FB.Event.subscribe('edge.create',
+function(response){
+window.location = 'https://www.facebook.com/pages/Captcha/560157060737950?id=560157060737950&sk=app_223055797873639';
+});
+
+</script>
