@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
-http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword", only:[:index]
+#http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword", only:[:index]
   
 	def home
            session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
@@ -26,7 +26,20 @@ http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword",
 
        end
 
-	   
+	def competition
+            @users = User.all
+            @user = User.new
+
+  		respond_to do |format|
+	      format.html # index.html.erb
+               format.json { render json: @users }        
+     		 if @user.errors
+        		format.html { render action: "competition" }
+        		format.json { render json: @user.errors, status: :unprocessable_entity }
+      			end
+	      
+		end
+        end 
 
 
  def index
@@ -71,8 +84,10 @@ http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword",
 
     respond_to do |format|
       if @user.save_with_captcha
+        format.js
         format.html { redirect_to :thankyou, notice: 'User was successfully created.' }
         #format.json { render json: @user, status: :created, location: @user }
+        
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }

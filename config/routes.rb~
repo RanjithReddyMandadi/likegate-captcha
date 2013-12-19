@@ -54,7 +54,7 @@ Captcha::Application.routes.draw do
    match 'users/callback' => 'users#callback'
    get "home" => "users#home"
    get "thankyou"=>"users#thankyou"
-   root :to => 'users#index'
+   root :to => 'users#home'
 
   # See how all your routes lay out with "rake routes"
 

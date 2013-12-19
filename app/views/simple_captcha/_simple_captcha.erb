@@ -1,3 +1,10 @@
+<script type ="text/javascript">
+$(document).ready(function() {
+  $(".refresh_image").click(function() {
+    $('#captcha').load("/users/dashboard/refresh_captcha_div");
+  });
+});
+</script>
 <style type="text/CSS">
   .simple_captcha{border: 1px solid #ccc; padding: 5px !important;}
   .simple_captcha,
@@ -39,3 +46,4 @@
     <%= simple_captcha_options[:label] %>
   </div>
 </div>
+

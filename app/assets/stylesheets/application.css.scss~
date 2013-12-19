@@ -11,10 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-.bdr{ border: solid 1px #000;}
-.mT20 {margin-top: 20px;}
-.mT40 {margin-top: 40px;}
-.seperator{border-top: solid 1px #7a5e45;
-}
-#mL2 { margin-left: 2px;}
