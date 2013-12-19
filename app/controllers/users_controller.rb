@@ -56,6 +56,7 @@ class UsersController < ApplicationController
      @user = User.new
       @b = session[:signed_request]['user_id']
       @c = session[:oauth].get_user_info_from_cookies(cookies)
+      @d = session[:signed_request]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
