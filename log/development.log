@@ -33180,3 +33180,515 @@ Served asset /thank_you.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/refresh.png" for 127.0.0.1 at 2013-12-19 19:08:11 +0000
 Served asset /refresh.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-19 19:53:20 +0000
+Processing by UsersController#home as HTML
+  Rendered users/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /framework_and_overrides.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /bootstrap.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /user.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /rails.validations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/like_gate.jpg" for 127.0.0.1 at 2013-12-19 19:53:21 +0000
+Served asset /like_gate.jpg - 304 Not Modified (41ms)
+
+
+Started GET "/competition" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Processing by UsersController#competition as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'ca4107864bb599bc5edd3fa790be0470bda85104' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `key`
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "simple_captcha_data" ("created_at", "key", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Dec 2013 19:55:32 UTC +00:00], ["key", "ca4107864bb599bc5edd3fa790be0470bda85104"], ["updated_at", Thu, 19 Dec 2013 19:55:32 UTC +00:00], ["value", "MNGMOS"]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  Rendered simple_captcha/_simple_captcha.erb (0.5ms)
+  Rendered users/competition.html.erb within layouts/application (60.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 154ms (Views: 79.6ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /framework_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/liked.jpg" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /liked.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/thank_you.jpg" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /thank_you.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/simple_captcha?code=ca4107864bb599bc5edd3fa790be0470bda85104&time=1387482932" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'ca4107864bb599bc5edd3fa790be0470bda85104' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'ca4107864bb599bc5edd3fa790be0470bda85104' LIMIT 1[0m
+
+
+Started GET "/assets/refresh.png" for 127.0.0.1 at 2013-12-19 19:55:32 +0000
+Served asset /refresh.png - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-19 19:55:52 +0000
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x255B0v8W6nlj12xucmGihHPxhV2B+7YY9ZF7d8mYT8=", "user"=>{"first_name"=>"Ranjith", "last_name"=>"reddy", "email"=>"developer.ranjith@gmail.com", "captcha"=>"mngmos", "captcha_key"=>"ca4107864bb599bc5edd3fa790be0470bda85104"}, "phone"=>"", "optout"=>"optout", "commit"=>"Submit Application"}
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.2ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'ca4107864bb599bc5edd3fa790be0470bda85104' LIMIT 1
+  [1m[36mSQL (18.5ms)[0m  [1mDELETE FROM "simple_captcha_data" WHERE ("key" = 'ca4107864bb599bc5edd3fa790be0470bda85104')[0m
+  [1m[35mSQL (10.6ms)[0m  DELETE FROM "simple_captcha_data" WHERE ("updated_at" < '2013-12-19 18:55:52.084655')
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Dec 2013 19:55:52 UTC +00:00], ["email", "developer.ranjith@gmail.com"], ["first_name", "Ranjith"], ["last_name", "reddy"], ["updated_at", Thu, 19 Dec 2013 19:55:52 UTC +00:00]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  Rendered users/create.js.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 1.4ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/competition" for 127.0.0.1 at 2013-12-19 20:00:26 +0000
+Processing by UsersController#competition as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  [1mSELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `key`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "simple_captcha_data" ("created_at", "key", "updated_at", "value") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Dec 2013 20:00:26 UTC +00:00], ["key", "c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e"], ["updated_at", Thu, 19 Dec 2013 20:00:26 UTC +00:00], ["value", "VJFZYO"]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  Rendered simple_captcha/_simple_captcha.erb (0.1ms)
+  Rendered users/competition.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 53.9ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 20:00:26 +0000
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /framework_and_overrides.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/simple_captcha?code=c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e&time=1387483226" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+  [1m[36mSimpleCaptcha::SimpleCaptchaData Load (0.2ms)[0m  [1mSELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e' LIMIT 1
+
+
+Started GET "/assets/liked.jpg" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /liked.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refresh.png" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /refresh.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/thank_you.jpg" for 127.0.0.1 at 2013-12-19 20:00:27 +0000
+Served asset /thank_you.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-19 20:00:48 +0000
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x255B0v8W6nlj12xucmGihHPxhV2B+7YY9ZF7d8mYT8=", "user"=>{"first_name"=>"Ranjith", "last_name"=>"reddy", "email"=>"developer.ranjith@gmail.com", "captcha"=>"vjfzyo", "captcha_key"=>"c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e"}, "phone"=>"", "optout"=>"optout", "commit"=>"Submit Application"}
+  [1m[36mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  [1mSELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = 'c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e' LIMIT 1[0m
+  [1m[35mSQL (17.4ms)[0m  DELETE FROM "simple_captcha_data" WHERE ("key" = 'c088f9f6b4b9c70ef3dd81e4fcb00f0100549b6e')
+  [1m[36mSQL (11.3ms)[0m  [1mDELETE FROM "simple_captcha_data" WHERE ("updated_at" < '2013-12-19 19:00:48.667146')[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Dec 2013 20:00:48 UTC +00:00], ["email", "developer.ranjith@gmail.com"], ["first_name", "Ranjith"], ["last_name", "reddy"], ["updated_at", Thu, 19 Dec 2013 20:00:48 UTC +00:00]]
+  [1m[35m (9.3ms)[0m  commit transaction
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 1.1ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/competition" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Processing by UsersController#competition as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = '74003fd04c011a68dfa0a3deb067d0711eb6e063' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `key`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "simple_captcha_data" ("created_at", "key", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Dec 2013 20:01:29 UTC +00:00], ["key", "74003fd04c011a68dfa0a3deb067d0711eb6e063"], ["updated_at", Thu, 19 Dec 2013 20:01:29 UTC +00:00], ["value", "PLIQHH"]]
+  [1m[36m (375.7ms)[0m  [1mcommit transaction[0m
+  Rendered simple_captcha/_simple_captcha.erb (0.3ms)
+  Rendered users/competition.html.erb within layouts/application (382.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 417ms (Views: 38.9ms | ActiveRecord: 376.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /framework_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/simple_captcha?code=74003fd04c011a68dfa0a3deb067d0711eb6e063&time=1387483289" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.2ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = '74003fd04c011a68dfa0a3deb067d0711eb6e063' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = '74003fd04c011a68dfa0a3deb067d0711eb6e063' LIMIT 1[0m
+
+
+Started GET "/assets/liked.jpg" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /liked.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/thank_you.jpg" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /thank_you.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/refresh.png" for 127.0.0.1 at 2013-12-19 20:01:29 +0000
+Served asset /refresh.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-19 20:01:53 +0000
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x255B0v8W6nlj12xucmGihHPxhV2B+7YY9ZF7d8mYT8=", "user"=>{"first_name"=>"Ranjith", "last_name"=>"reddy", "email"=>"ranjith@dodec.co.uk", "captcha"=>"pliqhh", "captcha_key"=>"74003fd04c011a68dfa0a3deb067d0711eb6e063"}, "phone"=>"", "optout"=>"optout", "commit"=>"Submit Application"}
+  [1m[35mSimpleCaptcha::SimpleCaptchaData Load (0.1ms)[0m  SELECT "simple_captcha_data".* FROM "simple_captcha_data" WHERE "simple_captcha_data"."key" = '74003fd04c011a68dfa0a3deb067d0711eb6e063' LIMIT 1
+  [1m[36mSQL (29.9ms)[0m  [1mDELETE FROM "simple_captcha_data" WHERE ("key" = '74003fd04c011a68dfa0a3deb067d0711eb6e063')[0m
+  [1m[35mSQL (17.9ms)[0m  DELETE FROM "simple_captcha_data" WHERE ("updated_at" < '2013-12-19 19:01:53.098249')
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Dec 2013 20:01:53 UTC +00:00], ["email", "ranjith@dodec.co.uk"], ["first_name", "Ranjith"], ["last_name", "reddy"], ["updated_at", Thu, 19 Dec 2013 20:01:53 UTC +00:00]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  Rendered users/create.js.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 1.0ms | ActiveRecord: 58.0ms)
