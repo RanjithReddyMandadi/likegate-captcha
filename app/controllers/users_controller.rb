@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword"
   
 	def home
            session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
@@ -71,7 +72,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save_with_captcha
         format.html { redirect_to :thankyou, notice: 'User was successfully created.' }
-        format.json { render json: @user, status: :created, location: @user }
+        #format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
