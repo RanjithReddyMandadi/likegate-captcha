@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
-http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword"
+http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword", only:[:index]
   
 	def home
            session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
@@ -12,7 +12,7 @@ http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword"
             session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
             @a = session[:signed_request]['page']['liked']
             
-            if @a==true
+            if @a
              redirect_to :new_user
 	    end
 

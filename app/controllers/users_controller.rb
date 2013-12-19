@@ -12,7 +12,7 @@ http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword",
             session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
             @a = session[:signed_request]['page']['liked']
             
-            if @a==true
+            if @a
              redirect_to :new_user
 	    end
 
@@ -73,6 +73,7 @@ http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword",
       if @user.save_with_captcha
         format.html { redirect_to :thankyou, notice: 'User was successfully created.' }
         #format.json { render json: @user, status: :created, location: @user }
+        format.js
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
