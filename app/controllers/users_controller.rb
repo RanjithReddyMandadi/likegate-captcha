@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   # GET /users.json
   
 	def home
-           session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
+           session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET)
            begin
             
 	    @auth_url = session[:oauth].url_for_oauth_code(:permissions=>"read_stream")         
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
-
+     @se = session[:oauth]
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user }
@@ -54,9 +54,7 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
      @user = User.new
-      @b = session[:signed_request]['user_id']
-      @c = session[:oauth].get_user_info_from_cookies(cookies)
-      @d = session[:signed_request]
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
