@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
-http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword"
+http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword", only:[:index]
   
 	def home
            session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
