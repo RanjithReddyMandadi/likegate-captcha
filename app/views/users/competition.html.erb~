@@ -29,7 +29,7 @@
       <div class="span3">
       </div>
   </div>
-  <%= form_for(@user, :remote => true, :validate=>true) do |f| %> 
+  <%= form_for(@user, :remote => true) do |f| %> 
   <div class="row-fluid before_submit">
    <div class = "span2">
    </div>
