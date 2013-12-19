@@ -12,8 +12,6 @@ class UsersController < ApplicationController
             @a = session[:signed_request]['page']['liked']
             
             if @a==true
-             @b = session[:signed_request]['user_id']
-             @c = session[:oauth].get_user_info_from_cookies(cookies)
              redirect_to :new_user
 	    end
 
@@ -54,8 +52,7 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
      @user = User.new
-     @se = session[:oauth]
-    respond_to do |format|
+      respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
     end
