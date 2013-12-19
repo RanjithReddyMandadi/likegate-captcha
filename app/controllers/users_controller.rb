@@ -1,40 +1,40 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
-#http_basic_authenticate_with :name => "dodecadmin", :password => "testpassword", only:[:index]
-  
-	def home
-           session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
-           begin
-            
-	    @auth_url = session[:oauth].url_for_oauth_code(:permissions=>"read_stream")         
-                           
-            session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
-            @a = session[:signed_request]['page']['liked']
-            
-            if @a
-             redirect_to :new_user
-	    end
+#http_basic_authenticate_with :name =>ENV['username'], :password => ENV['password'], only:[:index]
+ 
+# like gate 
+ def home
+    session[:oauth] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL)
+       
+    begin
+	@auth_url = session[:oauth].url_for_oauth_code(:permissions=>"read_stream")         
+         session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
+         @a = session[:signed_request]['page']['liked']
+         
+	 if @a
+          redirect_to :competition
+	 end
 
-          rescue Exception=>ex
-	   puts ex.message
-          end
+    rescue Exception=>ex
+	puts ex.message
+    end
 		
-         respond_to do |format|
+    respond_to do |format|
          format.html { }
-         end
+    end
+ end
 
-       end
+# Competition form
+ def competition
+     @users = User.all
+     @user = User.new
 
-	def competition
-            @users = User.all
-            @user = User.new
-
-  		respond_to do |format|
-	      format.html # index.html.erb
-	      format.json { render json: @users }
-		end
-        end 
+   respond_to do |format|
+     format.html # index.html.erb
+     format.json { render json: @users }
+   end
+ end 
 
 
  def index

@@ -36,25 +36,18 @@ $(document).ready(function() {
 <div class='simple_captcha'>
   <div class='simple_captcha_image'>
     <%= simple_captcha_options[:image] %>
-  </div>
+    </div>
   
   <div class='simple_captcha_field'>
     <%= simple_captcha_options[:field] %>
-  </div>
+  </div>?
   
   <div class='simple_captcha_label'>
     <%= simple_captcha_options[:label] %>
   </div>
+<div class="pull-right">
+ <%= image_submit_tag("refresh.png",:onclick =>"window.location.reload()", :title=>"New Image?") %>
 </div>
-<%= link_to_remote "change",
- :url => "update_captcha",
- :update => "simple_captcha" %>
-<% if @user.errors.any? %>
-    <div id="error_explanation">
-       <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+
+</div>
+
